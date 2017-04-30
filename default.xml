@@ -6,10 +6,6 @@
 	review="http://code-review.phablet.ubuntu.com"
 	revision="refs/tags/android-5.1.1_r5" />
 
-  <remote name="launchpad"
-        fetch="https://git.launchpad.net/~libhybris-maintainers/libhybris/+git/"
-        revision="stable" />
-
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
@@ -23,6 +19,10 @@
 	fetch="http://github.com"
 	review="http://review.ubports.com"
 	revision="refs/heads/ubp-5.1" />
+
+  <remote name="halium"
+	fetch="http://github.com"
+	revision="refs/heads/halium-5.1" />
 	
   <remote name="ab2ut"
 	fetch="http://github.com/ab2ut"
@@ -35,7 +35,7 @@
   <default remote="phablet"
            sync-j="6" />
 
-  <project path="build" name="ubports/android_build" groups="pdk,tradefed" remote="ubp" >
+  <project path="build" name="halium/android_build" groups="pdk,tradefed" remote="halium" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="android_abi_cpp" groups="pdk" remote="cm" />
@@ -118,7 +118,7 @@
   <project path="external/yaffs2" name="aosp/platform/external/yaffs2" groups="pdk" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
   <project path="external/zlib" name="ubports/android_external_zlib" groups="pdk" remote="ubp" />
   <project path="external/zopfli" name="aosp/platform/external/zopfli" groups="pdk-cw-fs" />
-  <project path="frameworks/av" name="ubports/android_frameworks_av" groups="pdk" remote="ubp" />
+  <project path="frameworks/av" name="halium/android_frameworks_av" groups="pdk" remote="halium" />
   <project path="frameworks/base" name="ubports/android_frameworks_base" groups="pdk-cw-fs" remote="ubp" />
   <project path="frameworks/native" name="ubports/android_frameworks_native" groups="pdk" remote="ubp" />
   <project path="frameworks/opt/emoji" name="android_frameworks_opt_emoji" groups="pdk-cw-fs" remote="cm" />
@@ -204,18 +204,11 @@
 
   <project path="bootable/recovery" name="ubports/android_bootable_recovery" groups="pdk" remote="ubp" /> 
 
-  <!-- Ubuntu specific repos -->
-
   <project path="external/busybox" name="CyanogenMod/android_external_busybox" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
   <project path="external/pigz" name="CyanogenMod/android_external_pigz" revision="refs/heads/cm-12.1" />
   <project path="external/koush/Superuser" name="CyanogenMod/Superuser" revision="refs/heads/cm-12.0"/>
   <project path="external/gpg" name="aosp/platform/external/gpg" revision="refs/heads/master" />
-  <project path="ubuntu/assets" name="ubuntu/assets" revision="refs/heads/master" />
-  <project path="ubuntu/libhybris" name="libhybris" remote="launchpad" />
-  <project path="ubuntu/platform-api" name="ubuntu/platform-api" revision="refs/heads/personal/w-ondra/phablet-5.x" />
-  <project path="ubuntu/upstart-property-watcher" name="ubuntu/upstart-property-watcher" revision="refs/heads/personal/w-ondra/phablet-5.x" />
-
-  <project path="ubuntu/ubuntu_prebuilt_initrd_debs" name="ubuntu/initrd/ubuntu_prebuilt_initrd_debs" revision="refs/heads/master" />
-  <project path="ubuntu/ubuntu_prebuilt_initrd" name="ubuntu/initrd/ubuntu_prebuilt_initrd" revision="refs/heads/master" />
-  <project path="ubuntu/prebuilts" name="ubuntu/prebuilts" revision="refs/heads/master" />
+  <project path="halium/libhybris" name="Halium/libhybris" revision="refs/heads/master" remote="ubp" />
+  <project path="halium/prebuilt-initrd" name="Halium/prebuilt-initrd" revision="refs/heads/master" remote="ubp" />
+  
 </manifest>
