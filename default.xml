@@ -15,6 +15,10 @@
 	fetch="https://github.com/CyanogenMod"
 	revision="refs/heads/cm-12.1" />
 
+ <remote name="them"
+	fetch="https://github.com/TheMuppets"
+	revision="refs/heads/cm-12.1" />
+
   <remote name="ubp"
 	fetch="https://github.com"
 	review="http://review.ubports.com"
