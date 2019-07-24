@@ -1,0 +1,41 @@
+Further cleanup, forking etc of the various Android repos. Comments are indicated with FIXME in default.xml and lineage.xml
+
+The following seems Mer specific and needs to be confirmed if usable for Halium and other distro's:
+
+### minisf 
+Probably useful for various media bits as well. So we'll keep it I guess.
+Mini surfaceflinger: https://github.com/mer-hybris/android_frameworks_native/commit/73601623ebfe04060054e070cf12c291b6ffe0da
+
+#### busybox
+Check prebuilt busybox at https://github.com/mer-hybris/android_external_busybox_prebuilt
+
+Why can't we build it ourselves? I suspect Mer's busybox might not be suitable for Halium 1:1
+
+### android_system_core
+Seems that Mer applied quite some Mer specific patches (https://github.com/mer-hybris/android_system_core/commits/hybris-15.1). We might want to revert the following:
+
+### Not sure:
+https://github.com/mer-hybris/android_system_core/commit/3f2cfdb316bf425b20522d18711ce0ce2b3d7d8c (reverted for now)
+https://github.com/mer-hybris/android_system_core/commit/e4ecc2858cf0ec841398f18d4c4fd4eb81696d82
+https://github.com/mer-hybris/android_system_core/commit/e3341759e5efe57d72abf6c8b53434c6256e909b (What populates /usr/libexec/droid-hybris/system/etc/init ?) https://github.com/search?q=org%3Amer-hybris+droid-hybris&type=Code
+https://github.com/mer-hybris/android_system_core/commit/5112f07fab06cfb4a40b4213e5ee2add9d288cac (What populates /usr/libexec/droid-hybris/system/etc/init ?) https://github.com/search?q=org%3Amer-hybris+droid-hybris&type=Code
+
+### Not sure (probably OK):
+https://github.com/mer-hybris/android_system_core/commit/d7b8f9994e42fc18124aa53e199204ba55ac9295
+https://github.com/mer-hybris/android_system_core/commit/f24d040bf531b6887d69390585bd57df9ce4ec53
+https://github.com/mer-hybris/android_system_core/commit/255a672d2859deddce99c3c0c2f172292cbb097c
+https://github.com/mer-hybris/android_system_core/commit/2c76e60372c8311fbc977c3c5298b46dd86147ad
+https://github.com/mer-hybris/android_system_core/commit/9091b48d1fb21f103d3d5630e5e14bcbcf73517d
+https://github.com/mer-hybris/android_system_core/commit/47491f9a7ed9b18c68d421ca2b1fea46109f47c6
+https://github.com/mer-hybris/android_system_core/commit/527baaa61fe3f5c5e18aaf7a9221cfa7da3b9ebc
+https://github.com/mer-hybris/android_system_core/commit/248621be4c30b03c696099a49f77d47bb2d70af9 which probably needs additional .sh scripts as used by Mer such as: https://github.com/mautz-kernel/droid-config-hammerhead/blob/master/installroot/usr/bin/droid/droid-hal-shutdown.sh
+https://github.com/mer-hybris/android_system_core/commit/09ee1b032af91ee0673570fa29bb2b241cbcd7d9
+https://github.com/mer-hybris/android_system_core/commit/af5ea4a187b0d33bc3a6d3dea4620c98d2b0d3dc
+https://github.com/mer-hybris/android_system_core/commit/8a0699532fd4e30831f38830a7860dd6d20c59ef
+https://github.com/mer-hybris/android_system_core/commit/074b5d86befca56d60613eba6923f2d4ea6470ae
+
+### Likely needs adjusting (simply reverted for now):
+https://github.com/mer-hybris/android_system_core/commit/6725f53486915799a4eabfadbe9c0897f6a9732c
+https://github.com/mer-hybris/android_system_core/commit/f191037a4e669ebb7197e84e2517c8278ab65814
+https://github.com/mer-hybris/android_system_core/commit/3d572edd109b4d661afd3147f90e46a1aaacee7d
+https://github.com/mer-hybris/android_system_core/commit/dff7abc1e37cc5a85568e68a6a6276ebb0b2373e
