@@ -466,7 +466,7 @@
 <!--
   <project path="external/zxing" name="platform/external/zxing" groups="pdk" remote="aosp" />
 -->
-  <project path="frameworks/av" name="mer-hybris/android_frameworks_av" groups="pdk" revision="hybris-15.1" />
+  <project path="frameworks/av" name="herrie82/android_frameworks_av" groups="pdk" revision="halium-8.1" />
   <project path="frameworks/base" name="herrie82/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" revision="halium-8.1" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" remote="aosp" />
 <!--
