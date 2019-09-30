@@ -31,6 +31,7 @@
   <!--<project path="hardware/ti/wpan" name="LineageOS/android_hardware_ti_wpan" />-->
   <project path="lineage-sdk" name="LineageOS/android_lineage-sdk" />
   <project path="lineage-sdk/samples/weatherproviderservice/OpenWeatherMapProvider" name="LineageOS/android_packages_apps_OpenWeatherMapProvider" />
+<!--
   <project path="packages/apps/AppDrawer" name="LineageOS/android_packages_apps_AppDrawer" />
   <project path="packages/apps/AudioFX" name="LineageOS/android_packages_apps_AudioFX" />
   <project path="packages/apps/Backgrounds" name="LineageOS/android_packages_apps_Backgrounds" />
@@ -49,6 +50,7 @@
   <project path="packages/apps/Updater" name="LineageOS/android_packages_apps_Updater" />
   <project path="packages/overlays/Lineage" name="LineageOS/android_packages_overlays_Lineage" />
   <project path="packages/providers/WeatherProvider" name="LineageOS/android_packages_providers_WeatherProvider" />
+-->
   <!--<project path="prebuilts/lineage-sdk" name="LineageOS/android_prebuilts_lineage-sdk" clone-depth="1" />-->
   <project path="system/extras/su" name="LineageOS/android_system_extras_su" />
   <project path="vendor/lineage" name="LineageOS/android_vendor_lineage" />
@@ -115,6 +117,7 @@
   <project path="vendor/qcom/opensource/thermal-engine" name="LineageOS/android_vendor_qcom_opensource_thermal-engine" groups="qcom,pdk-qcom" />
 
   <!-- Infrastructure -->
+<!--
   <project path="lineage/ansible" name="LineageOS/ansible" groups="infra" revision="master" />
   <project path="lineage/charter" name="LineageOS/charter" groups="infra" revision="master" />
   <project path="lineage/crowdin" name="LineageOS/cm_crowdin" groups="infra" revision="master" />
@@ -124,6 +127,7 @@
   <project path="lineage/slackbot" name="LineageOS/slackbot" groups="infra" revision="master" />
   <project path="lineage/website" name="LineageOS/www" groups="infra" revision="master" />
   <project path="lineage/wiki" name="LineageOS/lineage_wiki" groups="infra" revision="master" />
+-->
 
   <!-- Tools -->
   <project path="lineage/contributors-cloud-generator" name="LineageOS/contributors-cloud-generator" groups="tools" revision="master" />
