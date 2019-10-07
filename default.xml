@@ -692,9 +692,7 @@
   <project path="system/extras" name="herrie82/android_system_extras" groups="pdk" revision="halium-8.1" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" remote="aosp" />
   <project path="system/hardware/interfaces" name="platform/system/hardware/interfaces" groups="pdk" remote="aosp" />
-<!--
   <project path="system/hwservicemanager" name="LineageOS/android_system_hwservicemanager" groups="pdk" />
--->
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" remote="aosp" />
   <project path="system/libfmq" name="platform/system/libfmq" groups="pdk" remote="aosp" />
   <project path="system/libhidl" name="herrie82/android_system_libhidl" groups="pdk" revision="halium-8.1" />
