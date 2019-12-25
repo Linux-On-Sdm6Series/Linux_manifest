@@ -43,7 +43,7 @@
   </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" />
   <project path="build/kati" name="LineageOS/android_build_kati" groups="pdk,tradefed" />
-  <project path="build/soong" name="LineageOS/android_build_soong" groups="pdk,tradefed" >
+  <project path="build/soong" name="Herrie82/android_build_soong" groups="pdk,tradefed" revision="halium-8.1" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
