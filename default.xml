@@ -12,6 +12,22 @@
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
            revision="refs/tags/android-8.1.0_r52" />
+           
+  <!-- Uses ubports gerrit server since halium does not have one yet -->
+  <remote  name="halium"
+           fetch="https://github.com/halium"
+           review="http://review.ubports.com"
+           revision="refs/heads/halium-8.1" />
+
+  <remote  name="them"
+           fetch="https://github.com/TheMuppets"
+           revision="refs/heads/lineage-15.1" />
+
+  <remote  name="sailfishos"
+           fetch="https://github.com/sailfishos" />
+
+  <remote  name="mer-hybris"
+           fetch="https://github.com/mer-hybris" />
 
   <default revision="refs/heads/lineage-15.1"
            remote="github"
@@ -19,20 +35,20 @@
            sync-j="8" />
 
   <!-- Hybris repos -->
-  <project path="hybris/hybris-boot" name="mer-hybris/hybris-boot" revision="master" />
-  <project path="hybris/mer-kernel-check" name="mer-hybris/mer-kernel-check" revision="master" />
-  <project path="external/droidmedia" name="sailfishos/droidmedia" revision="master" />
-  <project path="external/audioflingerglue" name="mer-hybris/audioflingerglue" revision="master" />
-  <project path="external/busybox" name="mer-hybris/android_external_busybox_prebuilt" revision="master" />
-  <project path="external/selinux_stubs" name="mer-hybris/android_external_selinux_stubs" revision="master" />
+  <project path="hybris/hybris-boot" name="hybris-boot" remote="mer-hybris" revision="master" />
+  <project path="hybris/mer-kernel-check" name="mer-kernel-check" remote="mer-hybris" revision="master" />
+  <project path="external/droidmedia" name="droidmedia" remote="sailfishos" revision="master" />
+  <project path="external/audioflingerglue" name="audioflingerglue" remote="mer-hybris" revision="master" />
+  <project path="external/busybox" name="android_external_busybox_prebuilt" remote="mer-hybris" revision="master" />
+  <project path="external/selinux_stubs" name="android_external_selinux_stubs" remote="mer-hybris" revision="master" />
 
   <!-- Halium repos -->
-  <project path="halium/devices" name="herrie82/halium-devices" revision="halium-8.1"/>
-  <project path="halium/halium-boot" name="Halium/halium-boot" revision="master" />
+  <project path="halium/devices" name="halium-devices" remote="halium" />
+  <project path="halium/halium-boot" name="halium-boot" remote="halium" revision="master" />
 
   <!-- AOSP Projects -->
 
-  <project path="build/make" name="herrie82/android_build" groups="pdk" revision="halium-8.1" >
+  <project path="build/make" name="android_build" groups="pdk" remote="halium" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -43,12 +59,12 @@
   </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" />
   <project path="build/kati" name="LineageOS/android_build_kati" groups="pdk,tradefed" />
-  <project path="build/soong" name="Herrie82/android_build_soong" groups="pdk,tradefed" revision="halium-8.1" >
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="halium" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="art" name="herrie82/android_art" groups="pdk" revision="halium-8.1" />
-  <project path="bionic" name="mer-hybris/android_bionic" groups="pdk" revision="hybris-15.1" />
+  <project path="art" name="android_art" groups="pdk" remote="halium" />
+  <project path="bionic" name="android_bionic" groups="pdk" remote="mer-hybris" revision="hybris-15.1" />
   <project path="bootable/recovery" name="LineageOS/android_bootable_recovery" groups="pdk" />
 <!--
   <project path="compatibility/cdd" name="platform/compatibility/cdd" groups="pdk" remote="aosp" />
@@ -56,7 +72,7 @@
   <project path="dalvik" name="LineageOS/android_dalvik" groups="pdk-cw-fs,pdk-fs" />
   <project path="developers/build" name="platform/developers/build" groups="developers" remote="aosp" />
 -->
-  <project path="development" name="herrie82/android_development" groups="developers,pdk-cw-fs,pdk-fs" revision="halium-8.1" />
+  <project path="development" name="android_development" groups="developers,pdk-cw-fs,pdk-fs" remote="halium" />
   <project path="device/common" name="device/common" groups="pdk-cw-fs,pdk" remote="aosp" />
 <!--
   <project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" remote="aosp" />
@@ -207,7 +223,7 @@
 <!--
   <project path="external/hyphenation-patterns" name="platform/external/hyphenation-patterns" groups="pdk" remote="aosp" />
 -->
-  <project path="external/icu" name="herrie82/android_external_icu" groups="pdk" revision="halium-8.1" />
+  <project path="external/icu" name="android_external_icu" groups="pdk" remote="halium" />
   <project path="external/ImageMagick" name="platform/external/ImageMagick" groups="pdk" remote="aosp" />
 <!--
   <project path="external/ims" name="platform/external/ims" groups="pdk" remote="aosp" />
@@ -320,7 +336,7 @@
   <project path="external/ltp" name="platform/external/ltp" groups="vts,pdk" remote="aosp" />
 -->
   <project path="external/lz4" name="platform/external/lz4" groups="pdk" remote="aosp" />
-  <project path="external/lzma" name="herrie82/android_external_lzma" groups="pdk" revision="halium-8.1" />
+  <project path="external/lzma" name="android_external_lzma" groups="pdk" remote="halium" />
   <project path="external/markdown" name="platform/external/markdown" groups="pdk" remote="aosp" />
   <project path="external/mdnsresponder" name="platform/external/mdnsresponder" groups="pdk" remote="aosp" />
 <!--
@@ -368,7 +384,7 @@
   <project path="external/ppp" name="platform/external/ppp" groups="pdk" remote="aosp" />
   <project path="external/proguard" name="platform/external/proguard" groups="pdk" remote="aosp" />
 -->
-  <project path="external/protobuf" name="herrie82/android_external_protobuf-1" groups="pdk" revision="halium-8.1" />
+  <project path="external/protobuf" name="android_external_protobuf" groups="pdk" remote="halium" />
 <!--
   <project path="external/python/cpython2" name="platform/external/python/cpython2" groups="pdk" remote="aosp" />
   <project path="external/python/cpython3" name="platform/external/python/cpython3" groups="pdk" remote="aosp" />
@@ -466,7 +482,7 @@
 <!--
   <project path="external/zxing" name="platform/external/zxing" groups="pdk" remote="aosp" />
 -->
-  <project path="frameworks/av" name="herrie82/android_frameworks_av" groups="pdk" revision="halium-8.1" />
+  <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="halium" />
   <project path="frameworks/base" name="herrie82/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" revision="halium-8.1" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" remote="aosp" />
 <!--
@@ -477,7 +493,7 @@
 <!--
   <project path="frameworks/ex" name="platform/frameworks/ex" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
 -->
-  <project path="frameworks/hardware/interfaces" name="herrie82/android_frameworks_hardware_interfaces" groups="pdk" revision="halium-8.1" />
+  <project path="frameworks/hardware/interfaces" name="android_frameworks_hardware_interfaces" groups="pdk" remote="halium" />
 <!-- 
   <project path="frameworks/layoutlib" name="platform/frameworks/layoutlib" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
 -->
@@ -487,7 +503,7 @@
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
 -->
 <!-- FIXME, CHECK -->
-  <project path="frameworks/native" name="herrie82/android_frameworks_native" groups="pdk" revision="halium-8.1" />
+  <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="halium" />
 <!--
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs" remote="aosp" />
   <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
@@ -502,7 +518,7 @@
   <project path="frameworks/opt/net/lowpan" name="platform/frameworks/opt/net/lowpan" groups="pdk-fs" remote="aosp" />
   <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
 -->
-  <project path="frameworks/opt/net/wifi" name="herrie82/android_frameworks_opt_net_wifi" groups="pdk" revision="halium-8.1" />
+  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" groups="pdk" remote="halium" />
 <!--
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
@@ -510,8 +526,8 @@
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
 -->
-  <project path="frameworks/rs" name="herrie82/android_frameworks_rs" groups="pdk" revision="halium-8.1" />
-  <project path="frameworks/support" name="herrie82/android_frameworks_support" groups="pdk-cw-fs,pdk-fs" revision="halium-8.1" />
+  <project path="frameworks/rs" name="android_frameworks_rs" groups="pdk" remote="halium" />
+  <project path="frameworks/support" name="android_frameworks_support" groups="pdk-cw-fs,pdk-fs" remote="halium" />
 <!--
   <project path="frameworks/webview" name="platform/frameworks/webview" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
 -->
@@ -534,9 +550,9 @@
   <project path="hardware/intel/img/hwcomposer" name="platform/hardware/intel/img/hwcomposer" groups="intel,pdk" remote="aosp" />
   <project path="hardware/intel/img/psb_headers" name="platform/hardware/intel/img/psb_headers" groups="intel,pdk" remote="aosp" />
   <project path="hardware/intel/img/psb_video" name="platform/hardware/intel/img/psb_video" groups="intel,pdk" remote="aosp" />
-  <project path="hardware/interfaces" name="herrie82/android_hardware_interfaces" groups="pdk" revision="halium-8.1" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" groups="pdk" remote="halium" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense,pdk" remote="aosp" />
-  <project path="hardware/libhardware" name="mer-hybris/android_hardware_libhardware" groups="pdk" revision="hybris-15.1" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" groups="pdk" remote="mer-hybris" revision="hybris-15.1" />
   <project path="hardware/libhardware_legacy" name="LineageOS/android_hardware_libhardware_legacy" groups="pdk" />
   <project path="hardware/marvell/bt" name="platform/hardware/marvell/bt" groups="marvell_bt,pdk" remote="aosp" />
   <project path="hardware/qcom/audio/default" name="LineageOS/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" />
@@ -548,9 +564,9 @@
   <project path="hardware/qcom/keymaster" name="LineageOS/android_hardware_qcom_keymaster" groups="qcom,qcom_keymaster,pdk" />
   <project path="hardware/qcom/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk" />
   <project path="hardware/qcom/wlan" name="LineageOS/android_hardware_qcom_wlan" groups="qcom_wlan,pdk" />
-  <project path="hardware/ril" name="herrie82/android_hardware_ril" groups="pdk" revision="halium-8.1" />
+  <project path="hardware/ril" name="android_hardware_ril" groups="pdk" remote="halium" />
   <project path="kernel/tests" name="kernel/tests" remote="aosp" />
-  <project path="libcore" name="herrie82/android_libcore-1" groups="pdk" revision="halium-8.1" />
+  <project path="libcore" name="android_libcore" groups="pdk" remote="halium" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" remote="aosp" />
 <!--
   <project path="packages/apps/BasicSmsReceiver" name="LineageOS/android_packages_apps_BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs" />
@@ -667,7 +683,7 @@
   <project path="prebuilts/maven_repo/android" name="platform/prebuilts/maven_repo/android" groups="pdk-cw-fs,pdk-fs" clone-depth="1" remote="aosp" />
   <project path="prebuilts/maven_repo/bumptech" name="platform/prebuilts/maven_repo/bumptech" groups="pdk-cw-fs,pdk-fs" clone-depth="1" remote="aosp" />
 -->
-  <project path="prebuilts/misc" name="herrie82/android_prebuilts_misc" groups="pdk" clone-depth="1" revision="halium-8.1" />
+  <project path="prebuilts/misc" name="android_prebuilts_misc" groups="pdk" clone-depth="1" remote="halium" />
   <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk" clone-depth="1" remote="aosp" />
 <!--
   <project path="prebuilts/python/darwin-x86/2.7.5" name="platform/prebuilts/python/darwin-x86/2.7.5" groups="darwin,pdk,pdk-cw-fs,pdk-fs" clone-depth="1" remote="aosp" />
@@ -688,14 +704,14 @@
 <!--
   <project path="system/connectivity/wifilogd" name="platform/system/connectivity/wifilogd" groups="pdk" remote="aosp" />
 -->
-  <project path="system/core" name="herrie82/android_system_core-1" groups="pdk" revision="halium-8.1" />
-  <project path="system/extras" name="herrie82/android_system_extras" groups="pdk" revision="halium-8.1" />
+  <project path="system/core" name="android_system_core" groups="pdk" remote="halium" />
+  <project path="system/extras" name="android_system_extras" groups="pdk" remote="halium" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" remote="aosp" />
   <project path="system/hardware/interfaces" name="platform/system/hardware/interfaces" groups="pdk" remote="aosp" />
-  <project path="system/hwservicemanager" name="LineageOS/android_system_hwservicemanager" groups="pdk" />
+  <project path="system/hwservicemanager" name="android_system_hwservicemanager" groups="pdk" remote="halium" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" remote="aosp" />
   <project path="system/libfmq" name="platform/system/libfmq" groups="pdk" remote="aosp" />
-  <project path="system/libhidl" name="herrie82/android_system_libhidl" groups="pdk" revision="halium-8.1" />
+  <project path="system/libhidl" name="android_system_libhidl" groups="pdk" remote="halium" />
   <project path="system/libhwbinder" name="LineageOS/android_system_libhwbinder" groups="pdk" />
 <!--
   <project path="system/libufdt" name="platform/system/libufdt" groups="pdk" remote="aosp" />
@@ -713,7 +729,7 @@
   <project path="system/timezone" name="LineageOS/android_system_timezone" groups="pdk" />
 -->
   <project path="system/tools/aidl" name="LineageOS/android_system_tools_aidl" groups="pdk" />
-  <project path="system/tools/hidl" name="herrie82/android_system_tools_hidl" groups="pdk" revision="halium-8.1" />
+  <project path="system/tools/hidl" name="android_system_tools_hidl" groups="pdk" remote="halium" />
 <!--
   <project path="system/tpm" name="platform/system/tpm" remote="aosp" />
   <project path="system/update_engine" name="LineageOS/android_system_update_engine" groups="pdk" />
@@ -723,7 +739,7 @@
   <project path="test/framework" name="platform/test/framework" groups="vts,pdk-fs" remote="aosp" />
   <project path="test/sts" name="platform/test/sts" groups="sts,pdk" remote="aosp" />
 -->
-  <project path="test/vts" name="herrie82/android_test_vts" groups="vts,pdk-fs" revision="halium-8.1" />
+  <project path="test/vts" name="android_test_vts" groups="vts,pdk-fs" remote="halium" />
 <!--
   <project path="test/vts-testcase/fuzz" name="platform/test/vts-testcase/fuzz" groups="vts,pdk-fs" remote="aosp" />
   <project path="test/vts-testcase/hal" name="platform/test/vts-testcase/hal" groups="vts,pdk-fs" remote="aosp" />
