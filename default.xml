@@ -39,7 +39,7 @@
   <project path="hybris/mer-kernel-check" name="mer-kernel-check" remote="mer-hybris" revision="master" />
   <project path="external/droidmedia" name="droidmedia" remote="sailfishos" revision="master" />
   <project path="external/audioflingerglue" name="audioflingerglue" remote="mer-hybris" revision="master" />
-  <project path="external/busybox" name="android_external_busybox_prebuilt" remote="mer-hybris" revision="master" />
+  <project path="external/busybox" name="herrie82/android_external_busybox" revision="halium-8.1" />
   <project path="external/selinux_stubs" name="android_external_selinux_stubs" remote="mer-hybris" revision="master" />
 
   <!-- Halium repos -->
