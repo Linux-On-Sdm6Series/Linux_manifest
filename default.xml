@@ -22,6 +22,10 @@
   <remote  name="them"
            fetch="https://github.com/TheMuppets"
            revision="refs/heads/lineage-15.1" />
+  
+  <remote  name="them2"
+           fetch="https://gitlab.com/the-muppets"
+           revision="refs/heads/lineage-15.1" />
 
   <remote  name="sailfishos"
            fetch="https://github.com/sailfishos" />
