@@ -22,7 +22,8 @@
            sync-j="4" />
 
   <!-- Hybris repos -->
-  <project path="hybris-patches" name="mer-hybris/hybris-patches" revision="hybris-16.0" />
+  <project path="hybris-patches" name="Halium/hybris-patches" revision="halium-9.0" />
+  <project path="halium/halium-boot" name="Halium/halium-boot" revision="master" />
   <project path="hybris/hybris-boot" name="mer-hybris/hybris-boot" revision="master" />
   <project path="hybris/mer-kernel-check" name="mer-hybris/mer-kernel-check" revision="master" />
   <project path="external/droidmedia" name="sailfishos/droidmedia" revision="master" />
