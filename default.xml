@@ -29,6 +29,7 @@
   <project path="external/droidmedia" name="sailfishos/droidmedia" revision="master" />
   <project path="external/audioflingerglue" name="mer-hybris/audioflingerglue" revision="master" />
   <project path="external/busybox" name="mer-hybris/android_external_busybox_prebuilt" revision="master" />
+  <project path="external/libhybris" name="libhybris/libhybris" revision="master" />
   <project path="external/selinux_stubs" name="mer-hybris/android_external_selinux_stubs" revision="master" />
 
   <!-- AOSP Projects -->
