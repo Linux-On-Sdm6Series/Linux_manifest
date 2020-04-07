@@ -23,14 +23,15 @@
 
   <!-- Hybris repos -->
   <project path="hybris-patches" name="Halium/hybris-patches" revision="halium-9.0" />
-  <project path="halium/halium-boot" name="Halium/halium-boot" revision="master" />
   <project path="hybris/hybris-boot" name="mer-hybris/hybris-boot" revision="master" />
   <project path="hybris/mer-kernel-check" name="mer-hybris/mer-kernel-check" revision="master" />
   <project path="external/droidmedia" name="sailfishos/droidmedia" revision="master" />
   <project path="external/audioflingerglue" name="mer-hybris/audioflingerglue" revision="master" />
   <project path="external/busybox" name="mer-hybris/android_external_busybox_prebuilt" revision="master" />
-  <project path="external/libhybris" name="libhybris/libhybris" revision="master" />
   <project path="external/selinux_stubs" name="mer-hybris/android_external_selinux_stubs" revision="master" />
+  <project path="halium/halium-boot" name="Halium/halium-boot" revision="halium-9.0" />
+  <project path="halium/libhybris" name="Halium/libhybris" revision="halium-9.0" />
+  <project path="halium/platform-api" name="ubports/platform-api" revision="xenial_-_edge_-_android8"  />
 
   <!-- AOSP Projects -->
 
@@ -467,7 +468,9 @@
   <project path="external/tinyxml2" name="platform/external/tinyxml2" groups="pdk" remote="aosp" />
 <!--
   <project path="external/toolchain-utils" name="platform/external/toolchain-utils" remote="aosp" />
+  -->
   <project path="external/toybox" name="LineageOS/android_external_toybox" groups="pdk" />
+<!--
   <project path="external/tpm2" name="platform/external/tpm2" groups="pdk" remote="aosp" />
   <project path="external/trappy" name="platform/external/trappy" groups="pdk" remote="aosp" />
 -->
