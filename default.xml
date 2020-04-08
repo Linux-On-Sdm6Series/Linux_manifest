@@ -33,6 +33,13 @@
   <project path="halium/libhybris" name="Halium/libhybris" revision="halium-9.0" />
   <project path="halium/platform-api" name="ubports/platform-api" revision="xenial_-_edge_-_android8"  />
   <project path="halium/devices" name="Halium/halium-devices" revision="halium-9.0" />
+  
+  <!-- Device Whyred -->
+  <project path="devices/xiaomi/whyred" name="UbPorts-Sdm660/UbPorts_device_xiaomi_whyred" revision="halium-9.0" />
+  <project path="vendor/xiaomi/whyred" name="UbPorts-Sdm660/UbPorts_vendor_xiaomi_whyred" revision="halium-9.0" />
+  <project path="kernel/xiaomi/whyred" name="UbPorts-Sdm660/UbPorts_kernel_xiaomi_whyred" revision="halium-9.0" />
+  <project path="vendor/vndk" name="phhusson/vendor_vndk" revision="master" />
+  
 
   <!-- AOSP Projects -->
 
