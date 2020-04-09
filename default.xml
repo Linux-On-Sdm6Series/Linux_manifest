@@ -32,7 +32,7 @@
   <project path="halium/halium-boot" name="Halium/halium-boot" revision="halium-9.0" />
   <project path="halium/libhybris" name="Halium/libhybris" revision="halium-9.0" />
   <project path="halium/platform-api" name="ubports/platform-api" revision="xenial_-_edge_-_android8"  />
-  <project path="halium/devices" name="Halium-Whyred/UbPorts-halium_devices" revision="halium-9.0" />
+  <project path="halium/devices" name="Halium-Whyred/UbPorts-halium_devices" />
   
   <!-- Device Whyred -->
   <project path="vendor/vndk" name="phhusson/vendor_vndk" revision="master" />
