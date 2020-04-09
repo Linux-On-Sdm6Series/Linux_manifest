@@ -22,7 +22,7 @@
            sync-j="4" />
 
   <!-- Hybris repos -->
-  <project path="hybris-patches" name="Halium/hybris-patches" revision="halium-9.0" />
+  <project path="hybris-patches" name="Halium-Whyred/UbPorts_halium-patches" revision="halium-9.0" />
   <project path="hybris/hybris-boot" name="mer-hybris/hybris-boot" revision="master" />
   <project path="hybris/mer-kernel-check" name="mer-hybris/mer-kernel-check" revision="master" />
   <project path="external/droidmedia" name="sailfishos/droidmedia" revision="master" />
@@ -32,12 +32,9 @@
   <project path="halium/halium-boot" name="Halium/halium-boot" revision="halium-9.0" />
   <project path="halium/libhybris" name="Halium/libhybris" revision="halium-9.0" />
   <project path="halium/platform-api" name="ubports/platform-api" revision="xenial_-_edge_-_android8"  />
-  <project path="halium/devices" name="Halium/halium-devices" revision="halium-9.0" />
+  <project path="halium/devices" name="Halium-Whyred/UbPorts-halium_devices" revision="halium-9.0" />
   
   <!-- Device Whyred -->
-  <project path="devices/xiaomi/whyred" name="UbPorts-Sdm660/UbPorts_device_xiaomi_whyred" revision="halium-9.0" />
-  <project path="vendor/xiaomi/whyred" name="UbPorts-Sdm660/UbPorts_vendor_xiaomi_whyred" revision="halium-9.0" />
-  <project path="kernel/xiaomi/whyred" name="UbPorts-Sdm660/UbPorts_kernel_xiaomi_whyred" revision="halium-9.0" />
   <project path="vendor/vndk" name="phhusson/vendor_vndk" revision="master" />
   
 
