@@ -24,10 +24,10 @@ source build/envsetup.sh
 lunch lineage_<device<-userdebug
 ```
 ```
-make halium-boot -j$(nproc --all)
+mka halium-boot -j$(nproc --all)
 ```
 ```
-make systemimage -j$(nproc --all)
+mka systemimage -j$(nproc --all)
 
 ```
 
