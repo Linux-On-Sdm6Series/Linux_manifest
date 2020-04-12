@@ -22,7 +22,7 @@
            sync-j="4" />
 
   <!-- Hybris repos -->
-  <project path="halium-patches" name="Halium-Whyred/UbPorts_halium-patches" revision="halium-9.0" />
+  <project path="hybris-patches" name="Halium/hybris-patches" revision="halium-9.0" />
   <project path="hybris/hybris-boot" name="mer-hybris/hybris-boot" revision="master" />
   <project path="hybris/mer-kernel-check" name="mer-hybris/mer-kernel-check" revision="master" />
   <project path="external/droidmedia" name="sailfishos/droidmedia" revision="master" />
