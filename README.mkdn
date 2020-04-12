@@ -15,6 +15,24 @@ Then to sync up:
 ```
 repo sync -vf -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
+
+git device tree :
+```
+source build/envsetup.sh
+```
+```
+lunch lineage_<device<-userdebug
+```
+```
+make halium-boot -j$(nproc --all)
+```
+```
+make systemimage -j$(nproc --all)
+
+```
+
+
+
 Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for building instructions, by device.
 
 
