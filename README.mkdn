@@ -26,7 +26,7 @@ git device tree :
 source build/envsetup.sh
 ```
 ```
-lunch lineage_<device<-userdebug
+lunch lineage_whyred-userdebug
 ```
 ```
 mka halium-boot -j$(nproc --all)
