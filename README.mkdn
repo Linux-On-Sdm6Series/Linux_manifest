@@ -23,7 +23,7 @@ repo sync -vf -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
 Patch Hybris :
 ```
-hybris-patches/apply-patches.sh -mp
+hybris-patches/apply-patches.sh -mb
 ```
 
 git device tree :
