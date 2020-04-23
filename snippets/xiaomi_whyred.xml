@@ -14,10 +14,13 @@
           revision="halium-9.0-Beta" />
           
   <!-- Halium device For Whyred -->
-  <project path="device/xiaomi/whyred" name="Linux_device_xiaomi_whyred" remote="halium-9.0" />
+  <project path="device/xiaomi/whyred" name="Linux_device_xiaomi_whyred" remote="halium-9.0-Beta" />
+  
+  <!-- Halium device-sdm660 For Whyred -->
+  <project path="device/xiaomi/sdm660-common" name="Linux_device_xiaomi_sdm660-common" remote="halium-9.0" />
 
   <!-- Halium vendor For Whyred -->
-  <project path="vendor/xiaomi/whyred" name="Linux_vendor_xiaomi_whyred" remote="halium-9.0" />
+  <project path="vendor/xiaomi/whyred" name="Linux_vendor_xiaomi_whyred" remote="halium-9.0-Beta" />
   
   <!-- Halium kernel For Whyred -->
   <project path="kernel/xiaomi/whyred" name="Linux_kernel_xiaomi_whyred" remote="halium-9.0" />
