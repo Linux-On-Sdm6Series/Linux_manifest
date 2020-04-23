@@ -6,7 +6,7 @@ To initialize your local repository using the LineageOS trees, use a command lik
 repo init -u git://github.com/Halium-Whyred/Linux_manifest.git -b halium-9.0
 ```
 ```bash
-repo init -u git://github.com/Halium-Whyred/Linux_manifest.git -b halium-9.0-WIP
+repo init -u git://github.com/Halium-Whyred/Linux_manifest.git -b halium-9.0-WIP ( Build This Now )
 ```
 ```bash
 repo init -u git://github.com/Halium-Whyred/Linux_manifest.git -b halium-9.0-Beta
