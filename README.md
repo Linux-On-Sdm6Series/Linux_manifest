@@ -5,6 +5,11 @@ To initialize your local repository using the LineageOS trees, use a command lik
 ```
 repo init -u git://github.com/Halium-Whyred/Linux_manifest.git -b halium-9.0
 ```
+repo init -u git://github.com/Halium-Whyred/Linux_manifest.git -b halium-9.0-WIP
+```
+```
+repo init -u git://github.com/Halium-Whyred/Linux_manifest.git -b halium-9.0-Beta
+```
 or
 ```
 repo init -u git://github.com/Halium-Whyred/Linux_manifest.git -b halium-8.1
@@ -13,6 +18,9 @@ or :
 ```
 repo init -u git://github.com/Halium-Whyred/Linux_manifest.git -b halium-7.1
 ``` 
+```
+repo init -u git://github.com/Halium-Whyred/Linux_manifest.git -b halium-5.1
+```
 Then to sync up:
 ```
 repo sync -vf -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
