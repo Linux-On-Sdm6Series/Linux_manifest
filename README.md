@@ -24,6 +24,18 @@ repo init -u git://github.com/Halium-Whyred/Linux_manifest.git -b halium-5.1
 ```
 Then to sync up:
 ```bash
+repo sync -v -j$(nproc --all)
+```
+or :
+```bash
+repo sync -vf -j$(nproc --all)
+```
+or :
+```bash
+repo sync -vf -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+```
+or :
+```bash
 repo sync -vf -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 
