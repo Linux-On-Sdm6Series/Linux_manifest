@@ -60,7 +60,14 @@ mka halium-boot -j$(nproc --all)
 ```bash
 mka systemimage -j$(nproc --all)
 ```
-
+or :
+```bash
+source build/envsetup.sh && lunch lineage_whyred-userdebug && mka halium-boot -j$(nproc --all) && mka systemimage -j$(nproc --all)
+```
+or : 
+```bash
+source build/envsetup.sh && lunch lineage_whyred-userdebug && mka systemimage -j$(nproc --all)
+```
 ## Make Rootfs.img 
 clone halium Install :
 ```bash
