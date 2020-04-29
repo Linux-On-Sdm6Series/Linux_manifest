@@ -35,7 +35,7 @@ repo sync -vf -j$(nproc --all)
 ```
 or :
 ```bash
-repo sync -vf -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+repo sync -vc -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 or :
 ```bash
