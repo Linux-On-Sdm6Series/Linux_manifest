@@ -31,6 +31,10 @@ repo sync -v -j$(nproc --all)
 ```
 or :
 ```bash
+repo sync -vc -j$(nproc --all)
+```
+or :
+```bash
 repo sync -vf -j$(nproc --all)
 ```
 or :
