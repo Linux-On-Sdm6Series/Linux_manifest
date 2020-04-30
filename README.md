@@ -50,12 +50,12 @@ or :
 repo sync -vf -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 
-Patch Hybris : [ Only Halium 9.0 ]
+## Patch Hybris : [ Only Halium 9.0 ]
 ```bash
 hybris-patches/apply-patches.sh -mb
 ```
 
-git device tree :
+## Start Compile System.img
 ```bash
 source build/envsetup.sh
 ```
