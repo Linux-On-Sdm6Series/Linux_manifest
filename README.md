@@ -1,4 +1,4 @@
-# Halium 
+# Halium 5.1 / 7.1 / 8.1 / 9.0
 
 ## Repo Sync :
 To initialize your local repository using the LineageOS trees, use a command like this:
