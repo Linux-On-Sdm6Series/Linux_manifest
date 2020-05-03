@@ -115,16 +115,18 @@ wget https://build.lolinet.com/file/halium/ubport/ubuntu-touch-android9-armhf.ta
 ```bash
 . halium-install -p ut rootfs.tar.gz system.img
 ```
-EX ( Rootfs With TheKit ) :
+EX ( Rootfs With TheKit ) : 
 and system.img ~/halium/out/target/product/whyred/system.img
 ```bash
 . halium-install -p ut ubuntu-touch-android9-armhf-20200410.tar.gz ~/halium/out/target/product/whyred/system.img
 ```
 EX ( Rootfs With Erfan ) :
+and system.img ~/halium/out/target/product/whyred/system.img
 ```bash
 . halium-install -p ut ubuntu-touch-android9-armhf.tar.gz ~/halium/out/target/product/whyred/system.img
 ```
 EX ( Rootfs With CI UbPorts ) :
+and system.img ~/halium/out/target/product/whyred/system.img
 ```bash
 . halium-install -p ut ubports-touch.rootfs-xenial-armhf.tar.gz ~/halium/out/target/product/whyred/system.img
 ```
