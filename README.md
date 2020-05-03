@@ -1,7 +1,7 @@
 # Halium 7.1 / 8.1 / 9.0
 ##
 
-<img src="https://raw.githubusercontent.com/Linux-On-Whyred/Linux_manifest/halium-9.0/ubports.png"> 
+<img src="https://raw.githubusercontent.com/Linux-On-Whyred/Linux_manifest/halium-9.0/halium.png"> 
 
 
 ## Install Packages :
@@ -87,7 +87,10 @@ or : => system.img :
 ```bash
 source build/envsetup.sh && lunch lineage_whyred-userdebug && mka systemimage -j$(nproc --all)
 ```
-## Make Rootfs.img 
+## Make Rootfs.img UbPorts :
+##
+<img src="https://raw.githubusercontent.com/Linux-On-Whyred/Linux_manifest/halium-9.0/ubports.png"> 
+##
 clone halium Install :
 ```bash
 git clone -b halium-9.0 https://github.com/Linux-On-Whyred/UBPorts_halium-install.git halium-install
