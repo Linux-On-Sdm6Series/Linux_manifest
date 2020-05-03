@@ -29,7 +29,7 @@ repo init -u git://github.com/Halium-Whyred/Linux_manifest.git -b halium-7.1
 ``` 
 or :
 ```bash
-repo init -u git://github.com/Halium-Whyred/Linux_manifest.git -b halium-5.1
+
 ```
 Then to sync up:
 ```bash
