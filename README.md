@@ -27,10 +27,10 @@ or :
 ```bash
 repo init -u git://github.com/Halium-Whyred/Linux_manifest.git -b halium-7.1
 ``` 
-or :
-```bash
 
-```
+
+
+
 Then to sync up:
 ```bash
 repo sync -v -j$(nproc --all)
