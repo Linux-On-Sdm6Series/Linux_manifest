@@ -68,11 +68,15 @@ mka halium-boot -j$(nproc --all)
 ```bash
 mka systemimage -j$(nproc --all)
 ```
-or :
+or : => system.img , halium-boot.img :
 ```bash
 source build/envsetup.sh && lunch lineage_whyred-userdebug && mka halium-boot -j$(nproc --all) && mka systemimage -j$(nproc --all)
 ```
-or : 
+or : => halium-boot.img :
+```bash
+source build/envsetup.sh && lunch lineage_whyred-userdebug && mka halium-boot -j$(nproc --all)
+```
+or : => system.img :
 ```bash
 source build/envsetup.sh && lunch lineage_whyred-userdebug && mka systemimage -j$(nproc --all)
 ```
@@ -109,6 +113,14 @@ EX ( Rootfs With TheKit ) :
 and system.img ~/halium/out/target/product/whyred/system.img
 ```bash
 . halium-install -p ut ubuntu-touch-android9-armhf-20200410.tar.gz ~/halium/out/target/product/whyred/system.img
+```
+EX ( Rootfs With Erfan ) :
+```bash
+. halium-install -p ut ubuntu-touch-android9-armhf.tar.gz ~/halium/out/target/product/whyred/system.img
+```
+EX ( Rootfs With CI UbPorts ) :
+```bash
+. halium-install -p ut ubports-touch.rootfs-xenial-armhf.tar.gz ~/halium/out/target/product/whyred/system.img
 ```
 Check Folder Out from halium-install / is not halium
 
