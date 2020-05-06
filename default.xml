@@ -36,7 +36,7 @@
   
   <!-- Device Whyred -->
   <project path="vendor/vndk" name="phhusson/vendor_vndk" revision="master" />
-  
+  <project path="halium-install" name="Linux-On-Whyred/halium-install" revision="halium-9.0" />
 
   <!-- AOSP Projects -->
 
