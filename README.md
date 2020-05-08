@@ -111,7 +111,7 @@ source build/envsetup.sh && lunch lineage_whyred-userdebug && mka systemimage -j
 
 clone halium Install :
 ```bash
-git clone -b halium-9.0 https://github.com/Linux-On-Whyred/UBPorts_halium-install.git halium-install
+git clone -b halium-9.0 https://github.com/Linux-On-Whyred/halium-install.git halium-install
 ```
 =>
 ```bash
