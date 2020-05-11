@@ -36,11 +36,11 @@ repo init -u git://github.com/Halium-Whyred/Linux_manifest.git -b halium-9.0-Bet
 ```
 or
 ```bash
-repo init -u git://github.com/Halium-Whyred/Linux_manifest.git -b halium-8.1
+repo init -u git://github.com/Halium/android.git -b halium-8.1
 ```
 or :
 ```bash
-repo init -u git://github.com/Halium-Whyred/Linux_manifest.git -b halium-7.1
+repo init -u git://github.com/Halium/android.git -b halium-7.1
 ``` 
 
 
