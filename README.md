@@ -24,15 +24,15 @@ sudo dpkg --add-architecture i386 && sudo apt-get update && sudo apt-get upgrade
 
 To initialize your local repository using the LineageOS trees, use a command like this:
 ```bash
-repo init -u git://github.com/Halium-Whyred/Linux_manifest.git -b halium-9.0
+repo init -u git://github.com/Linux-On-Whyred/Linux_manifest.git -b halium-9.0
 ```
 or :
 ```bash
-repo init -u git://github.com/Halium-Whyred/Linux_manifest.git -b halium-9.0-WIP ( Build This Now )
+repo init -u git://github.com/Linux-On-Whyred/Linux_manifest.git -b halium-9.0-WIP ( Build This Now )
 ```
 or :
 ```bash
-repo init -u git://github.com/Halium-Whyred/Linux_manifest.git -b halium-9.0-Beta
+repo init -u git://github.com/Linux-On-Whyred/Linux_manifest.git -b halium-9.0-Beta
 ```
 or
 ```bash
