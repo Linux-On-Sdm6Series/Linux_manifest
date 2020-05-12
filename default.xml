@@ -263,6 +263,6 @@
     <project path="halium/libhybris" name="Halium/libhybris" remote="hal" revision="refs/heads/halium-7.1" />
     <project path="halium/platform-api" name="ubports/platform-api" remote="hal" revision="xenial"  />
 
-    <include name="xiaomi/whyred.xml" />
+    <include name="snippets/whyred.xml" />
 
 </manifest>
