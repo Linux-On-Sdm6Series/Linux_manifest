@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   
+  <remote name="github"
+          fetch="https://github.com" />
+  
   <remote name="mn3"
           fetch="https://github.com/MiNote3Dev"
           revision="cm-14.1" />
