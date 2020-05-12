@@ -70,6 +70,10 @@ or :
 ```bash
 repo sync -vf -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
+or :
+```bash
+repo sync -vc -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --single-branch
+```
 
 ## Patch Hybris : [ Only Halium 9.0 ]
 ```bash
