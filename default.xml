@@ -263,6 +263,25 @@
     <project path="halium/libhybris" name="Halium/libhybris" remote="hal" revision="refs/heads/halium-7.1" />
     <project path="halium/platform-api" name="ubports/platform-api" remote="hal" revision="xenial"  />
 
-    <include name="snippets/whyred.xml" />
+  <!-- device specific repos -->
+  <project name="Linux-On-Whyred/Linux_device_xiaomi_whyred" path="device/xiaomi/whyred" clone-depth="1" revision="halium-7.1" />
+  <project name="Linux-On-Whyred/kernel_xiaomi_whyred" path="kernel/xiaomi/whyred" clone-depth="1" revision="cm-14.1" />
+  <project name="Linux-On-Whyred/Linux_vendor_xiaomi_whyred" path="vendor/xiaomi/whyred" clone-depth="1" revision="halium-7.1" />
+
+  <!-- platform specific repos -->
+  <project name="MiNote3Dev/android_device_qcom_common" path="device/qcom/common" />
+  <project name="LineageOS/android_vendor_nxp-nfc_opensource_frameworks" path="vendor/nxp-nfc/opensource/frameworks" />
+  <project name="LineageOS/android_vendor_nxp-nfc_opensource_libnfc-nci" path="vendor/nxp-nfc/opensource/libnfc-nci" />
+  <project name="LineageOS/android_vendor_nxp-nfc_opensource_Nfc" path="vendor/nxp-nfc/opensource/Nfc" />
+  <project name="MiNote3Dev/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/sdm660" groups="qcom,qcom_audio" revision="cm-14.1-caf-660" />
+  <project name="MiNote3Dev/android_hardware_qcom_display" path="hardware/qcom/display-caf/sdm660" groups="pdk,qcom,qcom_display" revision="cm-14.1-caf-660" />
+  <project name="MiNote3Dev/android_hardware_qcom_media" path="hardware/qcom/media-caf/sdm660" groups="qcom" revision="cm-14.1-caf-660" />
+
+  <!-- common repos -->
+  <remove-project name="LineageOS/android_system_bt" />
+  <remove-project name="LineageOS/android_vendor_qcom_opensource_bluetooth" />
+  <project name="MiNote3Dev/android_system_bt" path="system/bt" groups="pdk" revision="staging/cm-14.1" />
+  <project name="MiNote3Dev/android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" revision="staging/cm-14.1" />
+  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" />
 
 </manifest>
