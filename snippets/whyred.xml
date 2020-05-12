@@ -14,9 +14,9 @@
   <project name="MiNote3Dev/android_hardware_qcom_display" path="hardware/qcom/display-caf/sdm660" groups="pdk,qcom,qcom_display" revision="cm-14.1-caf-660" />
   <project name="MiNote3Dev/android_hardware_qcom_media" path="hardware/qcom/media-caf/sdm660" groups="qcom" revision="cm-14.1-caf-660" />
 
-  <!-- common repos -->
+  <!-- common repos
   <remove-project name="LineageOS/android_system_bt" />
-  <remove-project name="LineageOS/android_vendor_qcom_opensource_bluetooth" />
+  <remove-project name="LineageOS/android_vendor_qcom_opensource_bluetooth" /> -->
   <project name="MiNote3Dev/android_system_bt" path="system/bt" groups="pdk" revision="staging/cm-14.1" />
   <project name="MiNote3Dev/android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" revision="staging/cm-14.1" />
   <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" />
