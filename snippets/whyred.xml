@@ -19,7 +19,7 @@
   <project name="Linux-On-Whyred/Linux_vendor_xiaomi_whyred" path="vendor/xiaomi/whyred" clone-depth="1" revision="halium-7.1" />
 
   <!-- platform specific repos -->
-  <project name="android_device_qcom_common" path="device/qcom/common" remote="mn3 />
+  <project name="android_device_qcom_common" path="device/qcom/common" remote="mn3" />
   <project name="LineageOS/android_vendor_nxp-nfc_opensource_frameworks" path="vendor/nxp-nfc/opensource/frameworks" />
   <project name="LineageOS/android_vendor_nxp-nfc_opensource_libnfc-nci" path="vendor/nxp-nfc/opensource/libnfc-nci" />
   <project name="LineageOS/android_vendor_nxp-nfc_opensource_Nfc" path="vendor/nxp-nfc/opensource/Nfc" />
