@@ -40,7 +40,7 @@ repo init -u git://github.com/Halium/android.git -b halium-8.1
 ```
 or :
 ```bash
-repo init -u git://github.com/halium/Linux_manifest.git -b halium-7.1
+repo init -u git://github.com/halium/android.git -b halium-7.1
 ``` 
 
 
