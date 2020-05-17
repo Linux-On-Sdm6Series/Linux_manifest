@@ -77,7 +77,7 @@ repo sync -vc -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --single
 
 ## Patch Hybris : [ Only Halium 9.0 ]
 ```bash
-hybris-patches/apply-patches.sh -mb
+hybris-patches/apply-patches.sh --mb
 ```
 
 ## Start Compile System.img
