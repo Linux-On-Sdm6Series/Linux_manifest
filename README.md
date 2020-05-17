@@ -105,7 +105,7 @@ or : => system.img :
 ```bash
 source build/envsetup.sh && lunch lineage_whyred-userdebug && mka systemimage -j$(nproc --all)
 ```
-## Make Rootfs.img UbPorts :
+## Make Rootfs.img UbPorts : [ Only Halium 9.0 7.0 8.1 ]
 
 ##
 
@@ -158,5 +158,5 @@ and system.img ~/halium/out/target/product/whyred/system.img
 ```
 Check Folder Out from halium-install / is not halium
 
-
+# PlasmaOS Only Halium 7.1
 
