@@ -140,7 +140,7 @@ wget https://build.lolinet.com/file/halium/ubport/ubuntu-touch-android9-armhf.ta
 ```
 ```bash
 arm64
-wget https://build.lolinet.com/file/halium/ubport/ubuntu-touch-android9-armhf.tar.gz
+wget https://build.lolinet.com/file/halium/ubport/ubuntu-touch-android9-arm64.tar.gz
 ```
 =>
 ```bash
