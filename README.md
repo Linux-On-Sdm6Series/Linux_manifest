@@ -135,6 +135,11 @@ wget https://github.com/ubports-on-fxtec-pro1/rootfs-builder-debos-android9/rele
 ```
 or ( Erfan ) :
 ```bash
+armhf:
+wget https://build.lolinet.com/file/halium/ubport/ubuntu-touch-android9-armhf.tar.gz
+```
+```bash
+arm64
 wget https://build.lolinet.com/file/halium/ubport/ubuntu-touch-android9-armhf.tar.gz
 ```
 =>
