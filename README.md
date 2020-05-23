@@ -85,7 +85,7 @@ hybris-patches/apply-patches.sh --mb
 source build/envsetup.sh
 ```
 ```bash
-lunch halium_whyred-userdebug
+lunch lineage_whyred-userdebug
 ```
 ```bash
 mka halium-boot -j$(nproc --all)
@@ -95,15 +95,15 @@ mka systemimage -j$(nproc --all)
 ```
 or : => system.img , halium-boot.img :
 ```bash
-source build/envsetup.sh && lunch halium_whyred-userdebug && mka halium-boot -j$(nproc --all) && mka systemimage -j$(nproc --all)
+source build/envsetup.sh && lunch lineage_whyred-userdebug && mka halium-boot -j$(nproc --all) && mka systemimage -j$(nproc --all)
 ```
 or : => halium-boot.img :
 ```bash
-source build/envsetup.sh && lunch halium_whyred-userdebug && mka halium-boot -j$(nproc --all)
+source build/envsetup.sh && lunch lineage_whyred-userdebug && mka halium-boot -j$(nproc --all)
 ```
 or : => system.img :
 ```bash
-source build/envsetup.sh && lunch halium_whyred-userdebug && mka systemimage -j$(nproc --all)
+source build/envsetup.sh && lunch lineage_whyred-userdebug && mka systemimage -j$(nproc --all)
 ```
 ## Make Rootfs.img UbPorts : [ Only Halium 9.0 7.0 8.1 ]
 
