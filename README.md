@@ -107,11 +107,21 @@ source build/envsetup.sh && lunch lineage_whyred-userdebug && mka systemimage -j
 ##
 
 clone halium Install :
+Create *.img only Legacy
 ```bash
 git clone -b halium-9.0 https://github.com/Linux-On-Whyred/halium-install.git halium-install
 ```
+Legacy + SAR
 ```bash
 git clone -b flashable-9.0 https://github.com/Linux-On-Whyred/halium-install.git halium-install
+```
+Legacy Only
+```bash
+git clone -b flashable-9.0-legacy https://github.com/Linux-On-Whyred/halium-install.git halium-install
+```
+SAR Only
+```bash
+git clone -b flashable-9.0-sar https://github.com/Linux-On-Whyred/halium-install.git halium-install
 ```
 =>
 ```bash
