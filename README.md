@@ -110,6 +110,9 @@ clone halium Install :
 ```bash
 git clone -b halium-9.0 https://github.com/Linux-On-Whyred/halium-install.git halium-install
 ```
+```bash
+git clone -b flashable-9.0 https://github.com/Linux-On-Whyred/halium-install.git halium-install
+```
 =>
 ```bash
 cd halium-install
