@@ -155,7 +155,7 @@ armhf :
 ```
 ```
 arm64
-. halium-install -p ut ubuntu-touch-android9-arm64.tar.gz ~/halium/out/target/product/whyred/system.img
+. halium-install -s buntu-touch-android9-arm64.tar.gz ~/halium/out/target/product/whyred/system.img
 ```
 EX ( Rootfs With CI UbPorts ) :
 and system.img ~/halium/out/target/product/whyred/system.img
