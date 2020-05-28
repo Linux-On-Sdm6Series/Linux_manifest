@@ -35,6 +35,7 @@
   <project path="halium/devices" name="Halium/halium-devices" revision="halium-9.0" />  
   <project path="halium/biometryd" name="erfanoabdi/biometryd" revision="xenial" />
   <project path="halium/hfd-service" name="erfanoabdi/hfd-service" revision="xenial_-_edge_-_android8" />
+  <project path="halium/repowerd" name="erfanoabdi/repowerd" revision="xenial" />
 
   <!-- Device Whyred -->
   <project path="halium-install" name="Linux-On-Whyred/halium-install" revision="flashable-9.0-sar" />
