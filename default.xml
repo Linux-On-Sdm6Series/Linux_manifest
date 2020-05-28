@@ -33,8 +33,8 @@
   <project path="halium/libhybris" name="erfanoabdi/libhybris" revision="master" />
   <project path="halium/platform-api" name="ubports/platform-api" revision="xenial"  />
   <project path="halium/devices" name="Halium/halium-devices" revision="halium-9.0" />  
-  <project path="halium/biometryd" name"erfanoabdi/biometryd" revision="xenial" />
-  <project path="halium/hfd-service" name"erfanoabdi/hfd-service" revision="xenial_-_edge_-_android8" />
+  <project path="halium/biometryd" name="erfanoabdi/biometryd" revision="xenial" />
+  <project path="halium/hfd-service" name="erfanoabdi/hfd-service" revision="xenial_-_edge_-_android8" />
 
   <!-- Device Whyred -->
   <project path="halium-install" name="Linux-On-Whyred/halium-install" revision="flashable-9.0-sar" />
