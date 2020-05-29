@@ -29,7 +29,7 @@
   <project path="external/audioflingerglue" name="mer-hybris/audioflingerglue" revision="master" />
   <project path="external/busybox" name="mer-hybris/android_external_busybox_prebuilt" revision="master" />
   <project path="external/selinux_stubs" name="mer-hybris/android_external_selinux_stubs" revision="master" />
-  <project path="halium/halium-boot" name="Halium/halium-boot" revision="halium-9.0" />
+  <project path="halium/halium-boot" name="erfanoabdi/halium-boot" revision="halium-9.0" />
   <project path="external/libhybris" name="erfanoabdi/libhybris" revision="master" />
   <project path="platform-api" name="erfanoabdi/platform-api" revision="xenial"  />
   <project path="halium/devices" name="Halium/halium-devices" revision="halium-9.0" />  
