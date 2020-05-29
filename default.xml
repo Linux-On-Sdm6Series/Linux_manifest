@@ -30,13 +30,15 @@
   <project path="external/busybox" name="mer-hybris/android_external_busybox_prebuilt" revision="master" />
   <project path="external/selinux_stubs" name="mer-hybris/android_external_selinux_stubs" revision="master" />
   <project path="halium/halium-boot" name="Halium/halium-boot" revision="halium-9.0" />
-  <project path="halium/libhybris" name="erfanoabdi/libhybris" revision="master" />
-  <project path="halium/platform-api" name="ubports/platform-api" revision="xenial"  />
+  <project path="external/libhybris" name="erfanoabdi/libhybris" revision="master" />
+  <project path="platform-api" name="ubports/platform-api" revision="xenial"  />
   <project path="halium/devices" name="Halium/halium-devices" revision="halium-9.0" />  
-  <project path="halium/biometryd" name="erfanoabdi/biometryd" revision="xenial" />
-  <project path="halium/hfd-service" name="erfanoabdi/hfd-service" revision="xenial_-_edge_-_android8" />
-  <project path="halium/repowerd" name="erfanoabdi/repowerd" revision="xenial" />
-  <project path="halium/overlay-reader" name="erfanoabdi/overlay-reader" revision="xenial" />
+  <project path="biometryd" name="erfanoabdi/biometryd" revision="xenial" />
+  <project path="hfd-service" name="erfanoabdi/hfd-service" revision="xenial_-_edge_-_android8" />
+  <project path="repowerd" name="erfanoabdi/repowerd" revision="xenial" />
+  <project path="overlay-reader" name="erfanoabdi/overlay-reader" revision="xenial" />
+  <project path="stub_netd" name="erfanoabdi/stub_netd" revision="halium-9.0" />
+  <project path="bluebinder" name="erfanoabdi/bluebinder" revision="xenial" />
 
   <!-- Device Whyred -->
   <project path="halium-install" name="Linux-On-Whyred/halium-install" revision="flashable-9.0-sar" />
