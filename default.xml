@@ -31,7 +31,7 @@
   <project path="external/selinux_stubs" name="mer-hybris/android_external_selinux_stubs" revision="master" />
   <project path="halium/halium-boot" name="Halium/halium-boot" revision="halium-9.0" />
   <project path="external/libhybris" name="erfanoabdi/libhybris" revision="master" />
-  <project path="platform-api" name="ubports/platform-api" revision="xenial"  />
+  <project path="platform-api" name="erfanoabdi/platform-api" revision="xenial"  />
   <project path="halium/devices" name="Halium/halium-devices" revision="halium-9.0" />  
   <project path="biometryd" name="erfanoabdi/biometryd" revision="xenial" />
   <project path="hfd-service" name="erfanoabdi/hfd-service" revision="xenial_-_edge_-_android8" />
