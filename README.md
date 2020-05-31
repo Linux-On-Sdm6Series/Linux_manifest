@@ -133,7 +133,12 @@ wget rootfs.tar.gz
 ```
 EX :
 ```bash
+armhf :
 wget https://ci.ubports.com/job/xenial-rootfs-armhf/lastSuccessfulBuild/artifact/out/ubports-touch.rootfs-xenial-armhf.tar.gz
+```
+```bash
+arm64 :
+wget https://ci.ubports.com/job/xenial-rootfs-arm64/lastSuccessfulBuild/artifact/out/ubports-touch.rootfs-xenial-arm64.tar.gz
 ```
 or ( Rootfs TheKit ) / https://github.com/ubports-on-fxtec-pro1/rootfs-builder-debos-android9/releases :
 ```bash
@@ -157,21 +162,39 @@ and system.img ~/halium/out/target/product/whyred/system.img
 ```bash
 . halium-install -p ut ubuntu-touch-android9-armhf-20200410.tar.gz ~/halium/out/target/product/whyred/system.img
 ```
+```bash
+armhf SAR :
+. halium-install --system-as-root ubuntu-touch-android9-armhf-20200410.tar.gz ~/halium/out/target/product/whyred/system.img
+```
 EX ( Rootfs With Erfan ) :
 and system.img ~/halium/out/target/product/whyred/system.img
 ```bash
-armhf :
+armhf SAR Only:
 . halium-install --system-as-root ubuntu-touch-android9-armhf.tar.gz ~/halium/out/target/product/whyred/system.img
 ```
 ```
-arm64
+arm64 SAR Only :
 . halium-install --system-as-root ubuntu-touch-android9-arm64.tar.gz ~/halium/out/target/product/whyred/system.img
 ```
 EX ( Rootfs With CI UbPorts ) :
 and system.img ~/halium/out/target/product/whyred/system.img
 ```bash
+armhf :
 . halium-install -p ut ubports-touch.rootfs-xenial-armhf.tar.gz ~/halium/out/target/product/whyred/system.img
 ```
+```bash
+arm64 :
+. halium-install -p ut ubports-touch.rootfs-xenial-arm64.tar.gz ~/halium/out/target/product/whyred/system.img
+```
+```bash
+armhf SAR :
+. halium-install --system-as-root ubports-touch.rootfs-xenial-armhf.tar.gz ~/halium/out/target/product/whyred/system.img
+```
+```bash
+arm64 SAR :
+. halium-install --system-as-root ubports-touch.rootfs-xenial-arm64.tar.gz ~/halium/out/target/product/whyred/system.img
+```
+
 Check Folder Out from halium-install / is not halium
 
 # PlasmaOS Only Halium 7.1
