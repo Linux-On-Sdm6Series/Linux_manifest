@@ -131,7 +131,7 @@ ubu-chroot -r $PLATFORM_SDK_ROOT/sdks/ubuntu # Join To Ubuntu SDK
 ```
 #
 # Now Sfos SDK = $PLATFORM_SDK / Ubuntu SDK = $HABUILD_SDK
-## To leave, just type `exit` or Ctrl+D, and you'll be back to the PLATFORM_SDK
+## With $HABUILD_SDK to leave, just type `exit` or Ctrl+D, and you'll be back to the PLATFORM_SDK
 ##
 $PLATFORM_SDK
 ```bash
