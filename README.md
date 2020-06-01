@@ -102,7 +102,7 @@ sudo mkdir -p /srv/mer/sdks/sfossdk
 sudo tar --numeric-owner -p -xjf Jolla-latest-SailfishOS_Platform_SDK_Chroot-i486.tar.bz2 -C /srv/mer/sdks/sfossdk
 ```
 ```bash
-/srv/mer/sdks/sfossdk/mer-sdk-chroot
+/srv/mer/sdks/sfossdk/mer-sdk-chroot # Join To Sfos SDK
 ```
 or:
 ```bash
@@ -118,6 +118,54 @@ sudo zypper ref
 ```bash
 sudo zypper dup
 ```
+# Settup Ubuntu SDK
+```bash
+TARBALL=ubuntu-trusty-20180613-android-rootfs.tar.bz2
+curl -O https://releases.sailfishos.org/ubu/$TARBALL
+UBUNTU_CHROOT=$PLATFORM_SDK_ROOT/sdks/ubuntu
+sudo mkdir -p $UBUNTU_CHROOT
+sudo tar --numeric-owner -xjf $TARBALL -C $UBUNTU_CHROOT
+```
+```bash
+ubu-chroot -r $PLATFORM_SDK_ROOT/sdks/ubuntu # Join To Ubuntu SDK
+```
+#
+# Now Sfos SDK = $PLATFORM_SDK / Ubuntu SDK = $HABUILD_SDK
+##
+$PLATFORM_SDK
+```bash
+sdk-assistant create $VENDOR-$DEVICE https://releases.sailfishos.org/sdk/targets/Sailfish_OS-$RELEASE-Sailfish_SDK_Tooling-i486.tar.7z
+```
+$PLATFORM_SDK
+```bash
+sdk-assistant create $VENDOR-$DEVICE-$PORT_ARCH https://releases.sailfishos.org/sdk/targets/Sailfish_OS-$RELEASE-Sailfish_SDK_Target-$PORT_ARCH.tar.7z
+```
+# Repo Sync
+$HABUILD_SDK
+```bash
+sudo mkdir -p $ANDROID_ROOT
+sudo chown -R $USER $ANDROID_ROOT
+cd $ANDROID_ROOT
+```
+```bash
+mkdir ~/bin
+PATH=~/bin:$PATH
+```
+```bash
+curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+chmod a+x ~/bin/repo
+```
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+```
+```bash
+repo init -u git://github.com/mer-hybris/android.git -b hybris-16.0
+```
+```bash
+repo sync -vf -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+```
+
 
  
 
