@@ -208,6 +208,9 @@ $ANDROID_ROOT/kernel/$VENDOR/$DEVICE
 Example:
 ```bash
 $ANDROID_ROOT/kernel/xiaomi/whyred
+```
+# Config Kernel
+## mer-kernel-check
 
 
 
