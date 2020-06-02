@@ -187,6 +187,15 @@ cd $ANDROID_ROOT
 ```bash
 rm -rf $ANDROID_ROOT/vendor/lineage/bootanimation
 ```
+## fixup-mountpoints
+```bash
+cd $ANDROID_ROOT
+```
+```bash
+nano hybris/hybris-boot/fixup-mountpoints
+```
+Edit Like This:
+Example : [*Xiaomi Redmi Note 5 Pro Whyred*](https://github.com/Linux-On-Whyred/hybris-boot/commit/9dc82c7d36dbebd2b9646ab37372ac8f7bccecb3)
 ## Clone Device Tree
 $HABUILD_SDK
 Device Tree [*LineageOS*](https://github.com/LineageOS)
