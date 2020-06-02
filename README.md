@@ -211,6 +211,10 @@ $ANDROID_ROOT/kernel/xiaomi/whyred
 ```
 # Config Kernel
 ## mer-kernel-check
+```bash
+hybris/mer-kernel-check/mer_verify_kernel_config local Defconfig
+```
+
 
 
 
