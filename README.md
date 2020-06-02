@@ -309,6 +309,12 @@ sed -e "s/@DEVICE@/whyred/" \
     droid-configs-device/droid-config-@DEVICE@.spec.template > \
     rpm/droid-config-whyred.spec
 ```
+```bash
+git add .
+```
+```bash
+git commit -m "[dcd] Initial content"
+```
 
 
 
