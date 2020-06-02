@@ -417,6 +417,19 @@ git add .
 ```bash
 git commit -m "[dvd] Initial content"
 ```
+# Start Ports SailfishOS
+```bash
+cd $ANDROID_ROOT
+```
+```bash
+rpm/dhd/helpers/build_packages.sh
+```
+```bash
+rpm/dhd/helpers/build_packages.sh --mw
+```
+```bash
+rpm/dhd/helpers/build_packages.sh --config
+```
 
 
 
