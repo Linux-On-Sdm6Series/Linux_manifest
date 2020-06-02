@@ -427,10 +427,13 @@ cd $ANDROID_ROOT
 rpm/dhd/helpers/build_packages.sh --mw
 ```
 ```bash
-rpm/dhd/helpers/build_packages.sh
+rpm/dhd/helpers/build_packages.sh -c
 ```
 ```bash
-rpm/dhd/helpers/build_packages.sh -c
+rpm/dhd/helpers/build_packages.sh --config
+```
+```bash
+rpm/dhd/helpers/build_packages.sh
 ```
 ## Create *.ks File
 ```bash
