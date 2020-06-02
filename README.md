@@ -1,4 +1,4 @@
-# Halium 7.1 / 8.1 / 9.0
+# Halium 9.0
 ##
 
 <img src="https://raw.githubusercontent.com/Linux-On-Whyred/Linux_manifest/halium-9.0/halium.png"> 
@@ -27,14 +27,6 @@ To initialize your local repository using the LineageOS trees, use a command lik
 repo init -u git://github.com/Linux-On-Whyred/Linux_manifest.git -b halium-9.0
 ```
 
-or
-```bash
-repo init -u git://github.com/Halium/android.git -b halium-8.1
-```
-or :
-```bash
-repo init -u git://github.com/halium/android.git -b halium-7.1
-``` 
 
 
 
