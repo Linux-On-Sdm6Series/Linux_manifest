@@ -418,6 +418,8 @@ git add .
 git commit -m "[dvd] Initial content"
 ```
 # Start Ports SailfishOS
+$PLATFORM_SDK
+## Build
 ```bash
 cd $ANDROID_ROOT
 ```
@@ -428,9 +430,18 @@ rpm/dhd/helpers/build_packages.sh
 rpm/dhd/helpers/build_packages.sh --mw
 ```
 ```bash
-rpm/dhd/helpers/build_packages.sh --config
+rpm/dhd/helpers/build_packages.sh -c
 ```
-
+## Create *.ks File
+```bash
+cd $ANDROID_ROOT
+HA_REPO="repo --name=adaptation-community-common-$DEVICE-$RELEASE"
+HA_DEV="repo --name=adaptation-community-$DEVICE-$RELEASE"
+KS="Jolla-$RELEASE-$DEVICE-$PORT_ARCH.ks"
+sed \
+"/$HA_REPO/i$HA_DEV --baseurl=file:\/\/$ANDROID_ROOT\/droid-local-repo\/$DEVICE" \
+$ANDROID_ROOT/hybris/droid-configs/installroot/usr/share/kickstarts/$KS > $KS
+```
 
 
  
