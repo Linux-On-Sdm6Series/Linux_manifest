@@ -424,10 +424,10 @@ $PLATFORM_SDK
 cd $ANDROID_ROOT
 ```
 ```bash
-rpm/dhd/helpers/build_packages.sh
+rpm/dhd/helpers/build_packages.sh --mw
 ```
 ```bash
-rpm/dhd/helpers/build_packages.sh --mw
+rpm/dhd/helpers/build_packages.sh
 ```
 ```bash
 rpm/dhd/helpers/build_packages.sh -c
