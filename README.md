@@ -251,7 +251,7 @@ hybris/mer-kernel-check/check-kernel-config $ANDROID_ROOT/kernel/xiaomi/whyred/a
 ```
 Must Re-Enter Many Times For Full Defconfig
 # Create HAL
-## rpm
+## droid-hal-whyred
 PLATFORM_SDK $
 ```bash
 cd $ANDROID_ROOT
@@ -314,6 +314,70 @@ git add .
 ```
 ```bash
 git commit -m "[dcd] Initial content"
+```
+```bash
+cd $ANDROID_ROOT
+```
+```bash
+rpm/dhd/helpers/add_new_device.sh
+```
+```bash
+cd hybris/droid-configs
+```
+```bash
+COMPOSITOR_CFGS=sparse/var/lib/environment/compositor
+```
+```bash
+mkdir -p $COMPOSITOR_CFGS
+```
+```bash
+cat <<EOF >$COMPOSITOR_CFGS/droid-hal-device.conf
+# Config for $VENDOR/$DEVICE
+EGL_PLATFORM=hwcomposer
+QT_QPA_PLATFORM=hwcomposer
+# Determine which node is your touchscreen by checking /dev/input/event*. WRITE ALL IN ONE LINE(:
+LIPSTICK_OPTIONS=-plugin evdevtouch:/dev/input/event0 -plugin evdevkeyboard:keymap=/usr/share/qt5/keymaps/droid.qmap
+EOL
+```
+```bash
+git add .
+```
+```bash
+git commit -m "[dcd] Patterns and compositor config"
+```
+## droid-hal-version-whyred
+$PLATFORM_SDK
+```bash
+cd $ANDROID_ROOT
+```
+```bash
+mkdir -p hybris/droid-hal-version-whyred
+```
+```bash
+cd hybris/droid-hal-version-whyred
+```
+```bash
+git init
+```
+```bash
+git submodule add https://github.com/mer-hybris/droid-hal-version
+```
+```bash
+mkdir rpm
+```
+```bash
+sed -e "s/@DEVICE@/whyred/" \
+    -e "s/@VENDOR@/xiaomi/" \
+    -e "s/@DEVICE_PRETTY@/Redmi Note 5/" \
+    -e "s/@VENDOR_PRETTY@/Xiaomi/" \
+    droid-hal-version/droid-hal-version-@DEVICE@.spec.template > \
+    rpm/droid-hal-version-whyred.spec
+```
+```bash
+git add .
+```
+```bash
+git commit -m "[dvd] Initial content"
 ```
 
 
