@@ -250,6 +250,28 @@ hybris/mer-kernel-check/check-kernel-config $ANDROID_ROOT/kernel/xiaomi/whyred/a
 hybris/mer-kernel-check/check-kernel-config $ANDROID_ROOT/kernel/xiaomi/whyred/arch/arm64/configs/whyred-perf_defconfig -w
 ```
 Must Re-Enter Many Times For Full Defconfig
+# Build vendor.img + hybris-boot
+$HABUILD_SDK
+```bash
+source build/envsetup.sh
+```
+```bash
+export USE_CCACHE=1
+```
+```bash
+lunch lineage_$DEVICE-userdebug
+```
+```bash
+EX:
+lunch lineage_whyred-userdebug
+```
+```bash
+mka -j$(nproc --all) hybris-hal
+```
+```bash
+out file:
+out/target/product/$DEVICE/
+```
 # Create HAL
 ## droid-hal-whyred
 PLATFORM_SDK $
