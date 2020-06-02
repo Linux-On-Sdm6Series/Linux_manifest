@@ -251,7 +251,7 @@ hybris/mer-kernel-check/check-kernel-config $ANDROID_ROOT/kernel/xiaomi/whyred/a
 ```
 Must Re-Enter Many Times For Full Defconfig
 # Create HAL
-## RPM
+## rpm
 PLATFORM_SDK $
 ```bash
 cd $ANDROID_ROOT
@@ -270,10 +270,10 @@ git submodule add https://github.com/mer-hybris/droid-hal-device dhd
 ``` 
 ```bash
 sed -e "s/@DEVICE@/whyred/" \
--e "s/@VENDOR@/xiaomi/" \
--e "s/@DEVICE_PRETTY@/Redmi Note 5/" \
--e "s/@VENDOR_PRETTY@/Xiaomi/" \
-dhd/droid-hal-@DEVICE@.spec.template > droid-hal-hammerhead.spec
+    -e "s/@VENDOR@/xiaomi/" \
+    -e "s/@DEVICE_PRETTY@/Redmi Note 5/" \
+    -e "s/@VENDOR_PRETTY@/Xiaomi/" \
+    dhd/droid-hal-@DEVICE@.spec.template > droid-hal-whyred.spec
 ```
 ```bash
 git add .
@@ -281,7 +281,34 @@ git add .
 ```bash
 git commit -m "[dhd] Initial content"
 ```
-
+## droid-config-whyred
+$PLATFORM_SDK
+```bash
+cd $ANDROID_ROOT
+```
+```bash
+mkdir -p hybris/droid-configs
+```
+```bash
+cd hybris/droid-configs
+```
+```bash
+git init
+```
+```bash
+git submodule add https://github.com/mer-hybris/droid-hal-configs droid-configs-device
+```
+```bash
+mkdir rpm
+```
+```bash
+sed -e "s/@DEVICE@/whyred/" \
+    -e "s/@VENDOR@/xiaomi/" \
+    -e "s/@DEVICE_PRETTY@/Redmi Note 5/" \
+    -e "s/@VENDOR_PRETTY@/Xiaomi/" \
+    droid-configs-device/droid-config-@DEVICE@.spec.template > \
+    rpm/droid-config-whyred.spec
+```
 
 
 
