@@ -214,6 +214,39 @@ $ANDROID_ROOT/kernel/xiaomi/whyred
 ```bash
 hybris/mer-kernel-check/mer_verify_kernel_config local Defconfig
 ```
+Example:
+```bash
+hybris/mer-kernel-check/mer_verify_kernel_config $ANDROID_ROOT/kernel/xiaomi/whyred/arch/arm64/configs/whyred-perf_defconfig
+```
+Then Add the Commit By Hand
+##
+## check-kernel-config ( Auto Config )
+```bash
+hybris/mer-kernel-check/check-kernel-config local Defconfig
+```
+```bash
+hybris/mer-kernel-check/check-kernel-config local Defconfig -w
+```
+```bash
+hybris/mer-kernel-check/check-kernel-config local Defconfig -w
+```
+```bash
+hybris/mer-kernel-check/check-kernel-config local Defconfig -w
+```
+Example:
+```bash
+hybris/mer-kernel-check/check-kernel-config $ANDROID_ROOT/kernel/xiaomi/whyred/arch/arm64/configs/whyred-perf_defconfig
+```
+```bash
+hybris/mer-kernel-check/check-kernel-config $ANDROID_ROOT/kernel/xiaomi/whyred/arch/arm64/configs/whyred-perf_defconfig -w
+```
+```bash
+hybris/mer-kernel-check/check-kernel-config $ANDROID_ROOT/kernel/xiaomi/whyred/arch/arm64/configs/whyred-perf_defconfig -w
+```
+```bash
+hybris/mer-kernel-check/check-kernel-config $ANDROID_ROOT/kernel/xiaomi/whyred/arch/arm64/configs/whyred-perf_defconfig -w
+```
+Must Re-Enter Many Times For Full Defconfig
 
 
 
