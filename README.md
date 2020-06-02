@@ -185,7 +185,7 @@ hybris-patches/apply-patches.sh --mb
 cd $ANDROID_ROOT
 ```
 ```bash
-rm -rf $ANDROID_ROOT/vendor/lineage/bootanimation
+rm -rf vendor/lineage/bootanimation
 ```
 ## fixup-mountpoints
 ```bash
