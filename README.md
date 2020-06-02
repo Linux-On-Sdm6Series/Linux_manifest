@@ -168,7 +168,7 @@ repo init -u git://github.com/mer-hybris/android.git -b hybris-16.0
 repo sync -vf -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 ## libhybris
-libhybris
+$HABUILD_SDK
 ```bash
 cd $ANDROID_ROOT/external
 ```
@@ -176,10 +176,39 @@ cd $ANDROID_ROOT/external
 git clone --recurse-submodules https://github.com/mer-hybris/libhybris.git
 ```
 ## hybris patches
-hybris patch
+$HABUILD_SDK
 ```bash
 hybris-patches/apply-patches.sh --mb
 ```
+## Clone Device Tree
+Device Tree [*LineageOS*](https://github.com/LineageOS)
+##
+Device Local:
+```bash
+$ANDROID_ROOT/device/$VENDOR/$DEVICE
+```
+Example:
+```bash
+$ANDROID_ROOT/device/xiaomi/whyred
+```
+##
+Vendor Local:
+```bash
+$ANDROID_ROOT/vendor/$VENDOR/$DEVICE
+```
+Example:
+```bash
+$ANDROID_ROOT/vendor/xiaomi/whyred
+```
+##
+Kernel Local:
+```bash
+$ANDROID_ROOT/kernel/$VENDOR/$DEVICE
+```
+Example:
+```bash
+$ANDROID_ROOT/kernel/xiaomi/whyred
+
 
 
  
