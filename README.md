@@ -181,6 +181,7 @@ $HABUILD_SDK
 hybris-patches/apply-patches.sh --mb
 ```
 ## Clone Device Tree
+$HABUILD_SDK
 Device Tree [*LineageOS*](https://github.com/LineageOS)
 ##
 Device Local:
@@ -211,6 +212,7 @@ $ANDROID_ROOT/kernel/xiaomi/whyred
 ```
 # Config Kernel
 ## mer-kernel-check
+$HABUILD_SDK
 ```bash
 hybris/mer-kernel-check/mer_verify_kernel_config local Defconfig
 ```
@@ -221,6 +223,7 @@ hybris/mer-kernel-check/mer_verify_kernel_config $ANDROID_ROOT/kernel/xiaomi/why
 Then Add the Commit By Hand
 ##
 ## check-kernel-config ( Auto Config )
+$HABUILD_SDK
 ```bash
 hybris/mer-kernel-check/check-kernel-config local Defconfig
 ```
