@@ -180,6 +180,13 @@ $HABUILD_SDK
 ```bash
 hybris-patches/apply-patches.sh --mb
 ```
+## Remove LineageOS Bootanimaton
+```bash
+cd $ANDROID_ROOT
+```
+```bash
+rm -rf $ANDROID_ROOT/vendor/lineage/bootanimation
+```
 ## Clone Device Tree
 $HABUILD_SDK
 Device Tree [*LineageOS*](https://github.com/LineageOS)
