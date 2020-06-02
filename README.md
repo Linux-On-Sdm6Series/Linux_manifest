@@ -141,7 +141,8 @@ $PLATFORM_SDK
 ```bash
 sdk-assistant create $VENDOR-$DEVICE-$PORT_ARCH https://releases.sailfishos.org/sdk/targets/Sailfish_OS-$RELEASE-Sailfish_SDK_Target-$PORT_ARCH.tar.7z
 ```
-# Repo Sync
+# Sync Source
+## Repo Sync
 $HABUILD_SDK
 ```bash
 sudo mkdir -p $ANDROID_ROOT
@@ -165,6 +166,19 @@ repo init -u git://github.com/mer-hybris/android.git -b hybris-16.0
 ```
 ```bash
 repo sync -vf -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+```
+## libhybris
+libhybris
+```bash
+cd $ANDROID_ROOT/external
+```
+```bash
+git clone --recurse-submodules https://github.com/mer-hybris/libhybris.git
+```
+## hybris patches
+hybris patch
+```bash
+hybris-patches/apply-patches.sh --mb
 ```
 
 
