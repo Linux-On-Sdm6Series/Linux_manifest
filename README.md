@@ -250,6 +250,37 @@ hybris/mer-kernel-check/check-kernel-config $ANDROID_ROOT/kernel/xiaomi/whyred/a
 hybris/mer-kernel-check/check-kernel-config $ANDROID_ROOT/kernel/xiaomi/whyred/arch/arm64/configs/whyred-perf_defconfig -w
 ```
 Must Re-Enter Many Times For Full Defconfig
+# Create HAL
+## RPM
+PLATFORM_SDK $
+```bash
+cd $ANDROID_ROOT
+```
+```bash
+mkdir rpm
+```
+```bash
+cd rpm
+```
+```bash
+git init
+```
+```bash
+git submodule add https://github.com/mer-hybris/droid-hal-device dhd
+``` 
+```bash
+sed -e "s/@DEVICE@/whyred/" \
+-e "s/@VENDOR@/xiaomi/" \
+-e "s/@DEVICE_PRETTY@/Redmi Note 5/" \
+-e "s/@VENDOR_PRETTY@/Xiaomi/" \
+dhd/droid-hal-@DEVICE@.spec.template > droid-hal-hammerhead.spec
+```
+```bash
+git add .
+```
+```bash
+git commit -m "[dhd] Initial content"
+```
 
 
 
