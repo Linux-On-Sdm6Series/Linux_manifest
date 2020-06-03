@@ -29,14 +29,14 @@ EX: su Nobita
 Create File [.hadk.env](https://google.com)
 ```bash
 cat << EOF >> ~/.hadk.env
-export PLATFORM_SDK_ROOT="/srv/mer"
+export MER_ROOT="/srv/mer"
 export ANDROID_ROOT="$HOME/hadk"
-export VENDOR="xiaomi" # Edit Branch
-export DEVICE="whyred" # Edit Device
+export VENDOR="xiaomi"
+export DEVICE="whyred"
 # ARCH conflicts with kernel build
 export PORT_ARCH="armv7hl"
-export RELEASE="3.3.0.16" # Edit New RELEASE
-export EXTRA_NAME="-Nobita" # Edit Developer Builder
+export RELEASE="3.3.0.16"
+export EXTRA_NAME="-Developer"
 
 # If not running interactively, don't do anything else
 [[ $- != *i* ]] && return
@@ -50,21 +50,23 @@ EOF
 Create File [.mersdk.profile](https://google.com)
 ```bash
 cat << EOF >> ~/.mersdk.profile
-PS1="PlatformSDK $PS1"
-if [ -d /etc/bash_completion.d ]; then
-   for i in /etc/bash_completion.d/*;
-   do
-      . $i
-   done
-fi
+function hadk() { source $HOME/.hadk.env; echo "Env setup for $DEVICE"; }
+hadk
+PS1="MerSDK $PS1"
 EOF
 ```
 Create File [.mersdkubu.profile](https://google.com)
 ```bash
-cat << EOF >> ~/.mersdkubu.profile
 function hadk() { source $HOME/.hadk.env; echo "Env setup for $DEVICE"; }
 export PS1="HABUILD_SDK [${DEVICE}] $PS1"
 hadk
+
+if [ -f build/envsetup.sh ]; then
+	echo "$ source build/envsetup.sh"
+	source build/envsetup.sh
+   echo "$ export USE_CCACHE=1"
+	export USE_CCACHE=1
+fi
 EOF
 ```
 Add This To Create File [.bashrc](https://google.com)
