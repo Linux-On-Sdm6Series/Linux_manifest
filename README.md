@@ -57,6 +57,7 @@ EOF
 ```
 Create File [.mersdkubu.profile](https://google.com)
 ```bash
+cat <<'EOF' >> $HOME/.mersdkubu.profile
 function hadk() { source $HOME/.hadk.env; echo "Env setup for $DEVICE"; }
 export PS1="HABUILD_SDK [${DEVICE}] $PS1"
 hadk
