@@ -100,8 +100,9 @@ sudo mkdir -p /srv/mer/sdks/sfossdk
 sudo tar --numeric-owner -p -xjf Jolla-latest-SailfishOS_Platform_SDK_Chroot-i486.tar.bz2 -C /srv/mer/sdks/sfossdk
 ```
 ```bash
-/srv/mer/sdks/sfossdk/mer-sdk-chroot # Join To Sfos SDK
+/srv/mer/sdks/sfossdk/mer-sdk-chroot
 ```
+^ Join $PLATFORM_SDK
 or:
 ```bash
 sfossdk
@@ -125,14 +126,23 @@ sudo zypper in android-tools-hadk tar
 # Settup Ubuntu SDK
 ```bash
 TARBALL=ubuntu-trusty-20180613-android-rootfs.tar.bz2
+```
+```bash
 curl -O https://releases.sailfishos.org/ubu/$TARBALL
+```
+```bash
 UBUNTU_CHROOT=$PLATFORM_SDK_ROOT/sdks/ubuntu
+```
+```bash
 sudo mkdir -p $UBUNTU_CHROOT
+```
+```bash
 sudo tar --numeric-owner -xjf $TARBALL -C $UBUNTU_CHROOT
 ```
 ```bash
-ubu-chroot -r $PLATFORM_SDK_ROOT/sdks/ubuntu # Join To Ubuntu SDK
+ubu-chroot -r $PLATFORM_SDK_ROOT/sdks/ubuntu
 ```
+^ Join $HABUILD_SDK
 #
 # Now Sfos SDK = $PLATFORM_SDK / Ubuntu SDK = $HABUILD_SDK
 ## With $HABUILD_SDK to leave, just type `exit` or Ctrl+D, and you'll be back to the PLATFORM_SDK
