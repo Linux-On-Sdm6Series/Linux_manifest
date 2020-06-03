@@ -120,6 +120,12 @@ sudo zypper ref
 ```bash
 sudo zypper dup
 ```
+```bash
+sudo zypper ref
+```
+```bash
+sudo zypper in android-tools-hadk tar
+```
 # Settup Ubuntu SDK
 ```bash
 TARBALL=ubuntu-trusty-20180613-android-rootfs.tar.bz2
