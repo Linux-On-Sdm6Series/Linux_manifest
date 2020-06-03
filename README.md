@@ -65,6 +65,7 @@ EOF
 ```
 Add This To Create File [.bashrc](https://google.com)
 ```bash
+cat << EOF >> ~/.bashrc
 # SailfishOS
 export HISTFILE="$HOME/.bash_history"
 export HISTSIZE=1000
@@ -82,6 +83,7 @@ alias platform_sdk="sfossdk"
 alias plat_sdk="sfossdk"
 alias platformsdk="sfossdk"
 alias platsdk="sfossdk"
+EOF
 ```
 # Settup Sfos SDK:
 ## Install SDK
