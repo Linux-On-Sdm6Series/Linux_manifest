@@ -57,7 +57,7 @@ repo sync -vf -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 or :
 ```bash
-repo sync -vc -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --single-branch
+repo sync -vc -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --depth=1
 ```
 
 ## Patch Hybris : [ Only Halium 9.0 ]
