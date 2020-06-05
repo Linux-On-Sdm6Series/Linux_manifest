@@ -20,6 +20,6 @@
   <project path="vendor/halium/whyred" name="vendor_halium_whyred" remote="halium-9.0" />
   
   <!-- Halium kernel For Whyred -->
-  <project path="kernel/halium/whyred" name="Linux_kernel_xiaomi_whyred" remote="halium-9.0-EAS" />
+  <project path="kernel/halium/whyred" name="kernel_halium_whyred" remote="halium-9.0-EAS" />
   
 </manifest>
