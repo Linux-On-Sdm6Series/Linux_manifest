@@ -37,7 +37,7 @@
   <project path="hfd-service" name="erfanoabdi/hfd-service" revision="xenial_-_edge_-_android8" />
   <project path="repowerd" name="erfanoabdi/repowerd" revision="xenial" />
   <project path="overlay-reader" name="erfanoabdi/overlay-reader" revision="xenial" />
-  <project path="stub_netd" name="erfanoabdi/stub_netd" revision="halium-9.0" />
+  <!-- <project path="stub_netd" name="erfanoabdi/stub_netd" revision="halium-9.0" /> -->
   <project path="bluebinder" name="erfanoabdi/bluebinder" revision="xenial" />
 
   <!-- Device Whyred -->
