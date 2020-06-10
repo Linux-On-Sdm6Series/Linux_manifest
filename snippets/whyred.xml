@@ -1,39 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  
-  <remote name="github"
-          fetch="https://github.com" />
-  
-  <remote name="mn3"
+
+  <remote name="jason1"
           fetch="https://github.com/MiNote3Dev"
           revision="cm-14.1" />
-   
-  <remote name="mn31"
+
+  <remote name="jason2"
           fetch="https://github.com/MiNote3Dev"
           revision="cm-14.1-caf-660" />
-  
-    <remote name="mn32"
+
+<remote name="jason3"
           fetch="https://github.com/MiNote3Dev"
           revision="staging/cm-14.1" />
-  
-  <!-- device specific repos -->
-  <project name="Linux-On-Whyred/Linux_device_xiaomi_whyred" path="device/xiaomi/whyred" clone-depth="1" revision="halium-7.1" />
-  <project name="Linux-On-Whyred/kernel_xiaomi_whyred" path="kernel/xiaomi/whyred" clone-depth="1" revision="cm-14.1" />
-  <project name="Linux-On-Whyred/Linux_vendor_xiaomi_whyred" path="vendor/xiaomi/whyred" clone-depth="1" revision="halium-7.1" />
 
-  <!-- platform specific repos -->
-  <project name="android_device_qcom_common" path="device/qcom/common" remote="mn3" />
-  <project name="LineageOS/android_vendor_nxp-nfc_opensource_frameworks" path="vendor/nxp-nfc/opensource/frameworks" />
-  <project name="LineageOS/android_vendor_nxp-nfc_opensource_libnfc-nci" path="vendor/nxp-nfc/opensource/libnfc-nci" />
-  <project name="LineageOS/android_vendor_nxp-nfc_opensource_Nfc" path="vendor/nxp-nfc/opensource/Nfc" />
-  <project name="android_hardware_qcom_audio" path="hardware/qcom/audio-caf/sdm660" groups="qcom,qcom_audio" remote="mn31" />
-  <project name="android_hardware_qcom_display" path="hardware/qcom/display-caf/sdm660" groups="pdk,qcom,qcom_display" remote="mn31" />
-  <project name="android_hardware_qcom_media" path="hardware/qcom/media-caf/sdm660" groups="qcom" remote="mn31" />
+  <remote name="los"
+          fetch="https://gitlab.com/LineageOS"
+          revision="cm-14.1" />
 
-  <!-- common repos
-  <remove-project name="LineageOS/android_system_bt" />
-  <remove-project name="LineageOS/android_vendor_qcom_opensource_bluetooth" /> -->
-  <project name="android_system_bt" path="system/bt" groups="pdk" remote="mn32" />
-  <project name="android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="mn32" />
-  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" />
+  <remote name="low"
+          fetch="https://github.com/Linux-On-Whyred"
+          revision="halium-7.1" />
+
+  <remote name="github"
+          fetch="https://github.com" />
+
+  <!-- Whyred Tree -->
+  <project path="device/xiaomi/whyred" name="Linux_device_xiaomi_whyred" remote="low" />
+  <project path="vendor/xiaomi/whyred" name="Linux_vednor_xiaomi_whyred" remote="low" />
+  <project path="kernel/xiaomi/whyred" name="kernel_halium_whyred" remote="low" />
+
+  <!-- Sdm660 LineageOS-14.1 / CyanogenMod 14 -->
+  <project path="device/qcom/common" name="android_device_qcom_common" remote="jason1" />
+  <project path="vendor/nxp-nfc/opensource/frameworks" name="android_vendor_nxp-nfc_opensource_frameworks" remote="los" />
+  <project path="vendor/nxp-nfc/opensource/libnfc-nci" name="android_vendor_nxp-nfc_opensource_libnfc-nci" remote="los" />
+  <project path="vendor/nxp-nfc/opensource/Nfc" name="android_vendor_nxp-nfc_opensource_Nfc" remote="los" />
+
+  <project path="hardware/qcom/audio-caf/sdm660" name="android_hardware_qcom_audio" remote="jason2" />
+  <project path="hardware/qcom/display-caf/sdm660" name="android_hardware_qcom_display" remote="jason2" />
+  <project path="hardware/qcom/media-caf/sdm660" name="android_hardware_qcom_media" remote="jason2" />
+  <project path="vendor/qcom/opensource/bluetooth" name="android_vendor_qcom_opensource_bluetooth" remote="jason3" />
+  <project path="" name="" remote="" />
+  <project path="" name="" remote="" />
+  <project path="" name="" remote="" />
+  <project path="" name="" remote="" />
+  <project path="" name="" remote="" />
 </manifest>
