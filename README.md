@@ -90,6 +90,10 @@ or : => system.img :
 ```bash
 source build/envsetup.sh && lunch lineage_whyred-userdebug && mka systemimage -j$(nproc --all)
 ```
+## make vendor.img ( only ):
+```bash
+source build/envsetup.sh && lunch lineage_whyred-userdebug && mka vendorimage -j$(nproc --all)
+```
 ## Make Rootfs.img UbPorts : [ Only Halium 9.0 7.0 8.1 ]
 
 ##
