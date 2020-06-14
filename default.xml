@@ -44,6 +44,7 @@
 
   <!-- Device Whyred -->
   <project path="halium-install" name="Linux-On-Whyred/halium-install" revision="flashable-9.0-sar" />
+  <project path="vendor/vndk" name="Linux-On-Whyred/vendor_vndk" revision="lineage-16.0" />
 
   <!-- AOSP Projects -->
 
