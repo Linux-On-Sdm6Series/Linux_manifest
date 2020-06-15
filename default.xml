@@ -776,7 +776,9 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" clone-depth="1" remote="aosp" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" clone-depth="1" remote="aosp" />
 
+<!--
   <project path="prebuilts/vndk/v27" name="platform/prebuilts/vndk/v27" groups="pdk" clone-depth="1" remote="aosp" />
+-->
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
 
   <project path="system/bt" name="LineageOS/android_system_bt" groups="pdk" />
